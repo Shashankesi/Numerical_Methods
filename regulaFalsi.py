@@ -43,7 +43,7 @@ def regula_falsi(coeff, a, b, eps=1e-6, max_iter=100):
     return None
 
 
-# ------------------ Example ------------------
+# ------------------ Example ------------------ of regula flasi
 # Polynomial: x^3 - 2x - 5 = 0
 coeff = [1, 0, -2, -5]
 
