@@ -14,7 +14,7 @@ def gauss_elimination(A, B):
     for i in range(n):
         print(f"\nPivot Position: Row {i+1}, Column {i+1}")
         
-        # Check for zero pivot
+
         if Aug[i][i] == 0:
             print("Pivot is zero. Checking for row swap...")
             for j in range(i+1, n):
@@ -26,7 +26,7 @@ def gauss_elimination(A, B):
         
         print(f"Pivot Element = {Aug[i][i]}")
         
-        # Eliminate below pivot
+
         for j in range(i+1, n):
             factor = Aug[j][i] / Aug[i][i]
             print(f"\nEliminating element at Row {j+1}, Column {i+1}")
@@ -44,7 +44,7 @@ def gauss_elimination(A, B):
     print(Aug)
     print("=" * 60)
 
-    # Back Substitution
+
     X = np.zeros(n)
     print("\nBack Substitution Steps:")
 
@@ -59,18 +59,12 @@ def gauss_elimination(A, B):
     return X
 
 
-# Example 4-variable system:
-#  x +  y +  z +  u = 10
-# 2x -  y + 3z + 2u = 5
-# 3x + 2y -  z +  u = 7
-# 4x +  y + 2z - 2u = 2
 
-A = np.array([
-    [1, 1, 1, 1],
-    [2, -1, 3, 2],
-    [3, 2, -1, 1],
-    [4, 1, 2, -2]
-])
+
+A = np.array([[1,1,1,1],
+              [2,-1,3,2],
+              [3,2,-1,1],
+              [4,1,2,-2]])
 
 B = np.array([10, 5, 7, 2])
 
