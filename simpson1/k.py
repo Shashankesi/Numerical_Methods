@@ -29,7 +29,7 @@ sol = gauss(A, B)
 
 print("\n --    --")
 print("\n     ;   ")
-print("\n   ----  ")
+print("\n   ----   ")
 print("\nFinal Solution:")
 variables = ['x', 'y', 'z', 'u']
 for i in range(len(sol)):
